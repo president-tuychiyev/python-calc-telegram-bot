@@ -34,7 +34,7 @@ keybord.row( telebot.types.InlineKeyboardButton('+/-', callback_data='pm'),
 @bot.message_handler(commands=['start', 'calc'])
 def getMessage(message):
     if(message.text == '/start'):
-        bot.reply_to(message, "Hi 👋🏻 This is a calculator bot for Telegram\n\n\👉🏻 Send /calc command to start the calculator!")
+        bot.reply_to(message, "Hi 👋🏻 This is a calculator bot for Telegram\n\n👉🏻 Send /calc command to start the calculator!")
     elif (message.text == '/calc'):
         global value
         if value == '':
@@ -73,7 +73,7 @@ def callback_func(query):
         try:
             value = str(eval(value))
         except:
-            value = 'Xatolik!' 
+            value = 'Error!' 
     else:
         value += data
 
@@ -85,7 +85,7 @@ def callback_func(query):
             bot.edit_message_text(chat_id=query.message.chat.id, message_id=query.message.message_id, text=value, reply_markup=keybord)
             old_value = value
     
-    if value == 'Xatolik!' : value = '0'
+    if value == 'Error!' : value = '0'
 
 while True:
     try:
