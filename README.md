@@ -2,6 +2,10 @@
 
 Run this py file and enjoy telegram calculator :)
 
-<video autoplay muted>
-  <source src="https://telegra.ph/file/17c4cd866467f8d668510.mp4" type="video/mp4">
-  </video>
+
+https://github.com/president-tuychiyev/python-calc-telegram-bot/assets/68532523/50fc780e-780a-4f37-81ae-5966aa0087f4
+
+
+
+
+
